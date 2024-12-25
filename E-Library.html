@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Personal Book Library</h1>
+    </header>
+
+    <main>
+        <section id="add-book">
+            <h2>Add a New Book</h2>
+            <form id="add-book-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                </select>
+
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section id="book-list">
+            <h2>Library Books</h2>
+            <input type="text" id="search-bar" placeholder="Search by title or author">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Borrow History</th>
+                    </tr>
+                </thead>
+                <tbody id="book-table-body">
+                    <!-- Dynamic Content -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Personal Book Library</p>
+    </footer>
+</body>
+</html>
